@@ -139,6 +139,7 @@ public class GameActivity extends AppCompatActivity {
 
 	public void matchPhoto(final int position, final String photoIdentifier) {
 		turns++;
+		resultTextView.setVisibility(View.VISIBLE);
 		String currentPhotoUrl = (String) currentPhotoForIdentificationImageView.getTag();
 		if (photoIdentifier.equals(currentPhotoUrl)) {
 			//yay, user has identified correctly

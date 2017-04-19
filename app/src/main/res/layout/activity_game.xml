@@ -65,6 +65,7 @@
 				android:layout_below="@+id/current_photo_for_identification"
 				android:gravity="center_horizontal"
 				android:padding="@dimen/gap_8"
+				android:visibility="gone"
 				tools:text="@string/fail_message"/>
 
 		</RelativeLayout>
