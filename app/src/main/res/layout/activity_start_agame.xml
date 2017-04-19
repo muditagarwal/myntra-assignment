@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/activity_start_agame"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.assignment.myntra.ui.activities.StartAGameActivity">
+
+	<TextView
+		android:id="@+id/welcome_text"
+		style="@style/TextAppearance.AppCompat.Headline"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_marginLeft="@dimen/gap_32"
+		android:layout_marginRight="@dimen/gap_32"
+		android:layout_marginTop="@dimen/gap_96"
+		android:drawableTop="@drawable/ic_scramble"
+		android:text="@string/welcome_to_picscramble"/>
+
+	<Button
+		android:id="@+id/start_a_game"
+		style="@style/Base.Widget.AppCompat.Button.Colored"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/welcome_text"
+		android:layout_margin="@dimen/gap_32"
+		android:onClick="startAGame"
+		android:text="@string/start_a_game"/>
+
+	<TextView
+		android:id="@+id/best_score"
+		style="@style/TextAppearance.AppCompat.Display1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/start_a_game"
+		android:layout_centerHorizontal="true"
+		android:layout_marginLeft="@dimen/gap_32"
+		android:layout_marginRight="@dimen/gap_32"
+		android:gravity="center_horizontal"
+		android:textColor="@android:color/black"
+		android:visibility="gone"
+		tools:text="@string/your_best_score"/>
+</RelativeLayout>

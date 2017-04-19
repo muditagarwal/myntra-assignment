@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/activity_game"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.assignment.myntra.ui.activities.GameActivity">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/timer"
+			style="@style/Base.TextAppearance.AppCompat.Headline"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1.5"
+			android:gravity="center"
+			android:padding="@dimen/gap_16"
+			android:textSize="60sp"
+			android:visibility="gone"
+			tools:text="15"/>
+
+		<RelativeLayout
+			android:id="@+id/game_area_layout"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1.5"
+			android:paddingTop="@dimen/gap_24"
+			android:visibility="gone">
+
+			<TextView
+				android:id="@+id/score"
+				style="@style/TextAppearance.AppCompat.Large"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@+id/current_photo_for_identification"
+				android:gravity="center"
+				android:padding="@dimen/gap_16"
+				tools:text="Score\n14"/>
+
+			<ImageView
+				android:id="@+id/current_photo_for_identification"
+				android:layout_width="128dp"
+				android:layout_height="128dp"
+				android:layout_centerHorizontal="true"
+				android:src="@drawable/ic_sample_media"/>
+
+			<TextView
+				android:id="@+id/pending_photo_count"
+				style="@style/TextAppearance.AppCompat.Large"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/current_photo_for_identification"
+				android:gravity="center"
+				android:padding="@dimen/gap_16"
+				tools:text="Pending\n4"/>
+
+			<TextView
+				android:id="@+id/result"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/current_photo_for_identification"
+				android:gravity="center_horizontal"
+				android:padding="@dimen/gap_8"
+				tools:text="@string/fail_message"/>
+
+		</RelativeLayout>
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/photo_grid"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_marginLeft="@dimen/gap_8"
+			android:layout_weight="3"
+			tools:listitem="@layout/item_photo_grid"/>
+	</LinearLayout>
+
+	<include layout="@layout/progress"/>
+
+</RelativeLayout>

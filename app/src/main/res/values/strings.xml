@@ -1,0 +1,24 @@
+<resources>
+	<string name="app_name">Myntra Assignment - Mudit</string>
+	<string name="welcome_to_picscramble">Welcome to PicScramble!</string>
+	<string name="start_a_game">Start A Game</string>
+	<string name="your_best_score">Your Best Score\n%1$d</string>
+
+	<string name="progress_message">Loading photos!! \n\nTry identifying all photos in least number of turns possible to become a Scramble Master!</string>
+
+	<!--Network Errors -->
+	<string name="no_internet_message">No internet connection, Please connect to a working internet connection.</string>
+	<string name="generic_server_error">Some error occurred. Please try again!</string>
+	<string name="error_parsing_feed">Well something is not right, please try again!</string>
+	<string name="question">\?</string>
+
+	<string name="score">Score\n%1$d</string>
+	<string name="pending">Pending\n%1$d</string>
+	<string name="success_message">Yay! You are correct!</string>
+	<string name="fail_message">Oops! Wrong answer!</string>
+	<string name="yay">Yay!</string>
+	<string name="congrats_message">Congrats! You have solved the game in just %1$d turns.</string>
+	<string name="great">Great</string>
+	<string name="abort_game_message">Do you want to exit from the game mid-way?</string>
+
+</resources>

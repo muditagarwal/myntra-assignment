@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="colorPrimary">#36b269</color>
+	<color name="colorPrimaryDark">#0c6b33</color>
+	<color name="colorAccent">#36b269</color>
+
+	<color name="fail">#cf2727</color>
+	<color name="success">#7cb53a</color>
+</resources>
